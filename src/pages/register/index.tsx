@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
   Button,
   Flex,
@@ -38,7 +37,6 @@ interface IFormInputs {
   name: string
   email: string
   password: number
-
 }
 
 export default function Login() {
@@ -47,15 +45,10 @@ export default function Login() {
     base: false,
     xl: true,
   })
-
-
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
     resolver: yupResolver(schema)
   });
-
-
   const router = useRouter()
-
   const toast = useToast()
   const onSubmit = (data: IFormInputs) => {
     console.log(data);
@@ -74,7 +67,6 @@ export default function Login() {
 
   //Vizualizar a senha
   const [showPassword, setShowPassword] = useState<boolean>(false);
-
   const [ismax] = useMediaQuery("(max-width:280px)");
   return (
     <Stack

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
   Button,
   Checkbox,
@@ -29,7 +28,6 @@ import { useMediaQuery } from '@chakra-ui/media-query';
 
 //validação formulário
 const schema = yup.object().shape({
-
   email: yup.string().email('*Deve ser inserido um e-mail válido').max(255).required('*Nenhum e-mail foi fornecido'),
   password: yup.string().required('*Nenhuma senha foi forncedida')
     .min(8, '*A senha é muito curta - deve ter no mínimo 8 caracteres.')
@@ -41,7 +39,6 @@ const schema = yup.object().shape({
 interface IFormInputs {
   email: string
   password: number
-
 }
 
 export default function Login() {
@@ -50,8 +47,6 @@ export default function Login() {
     base: false,
     xl: true,
   })
-
-
   const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
     resolver: yupResolver(schema)
   });
@@ -74,7 +69,7 @@ export default function Login() {
   //Vizualizar a senha
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [ismax] = useMediaQuery("(min-width:1281px)");
-  
+
   return (
     <Stack
       w={'full'}
