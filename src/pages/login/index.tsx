@@ -142,7 +142,7 @@ export default function Login() {
    <InputGroup>
    <Input color='white' border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
           
-   maxW={['330', '450', '450' ,'400', '460']}
+   maxW={['330', '450', '450' ,'450', '460']}
    
    type={showPassword ? "text" : "password"}   {...register("password")}  variant='flushed' 
 
