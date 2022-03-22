@@ -20,8 +20,8 @@ export default function Home() {
   })
 
   return (
-    <Flex 
-    w={['100%', '900px', '311.5vh' , '215vh', '100%' ]}
+    <Flex
+    w={['349vw', '900px', '311.5vh' , '215vh', '100%' ]}
     h={['369vh', '300vh', '200vh' , '1200px', '100vh'  ]}
     bgSize='cover'
     bgPosition='center'
