@@ -47,8 +47,6 @@ interface IFormInputs {
   
 }
 
-
-
 export default function Login() {
 
   const isWideVersion = useBreakpointValue({
@@ -98,7 +96,7 @@ export default function Login() {
       
       
       >
-    <Stack minH={'100vh'} direction={{ base: 'row', md: 'row' }}>
+    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={7} flex={5} align={'center'} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'md'} >
 
@@ -138,20 +136,11 @@ export default function Login() {
 
  <FormControl id="password">
    <FormLabel color='white' mb={2} >Senha</FormLabel>
-
    <InputGroup>
-   <Input color='white' border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
-          
+   <Input color='white' border='3px solid' borderLeft={0} borderRight={0} borderTop={0}     
    maxW={['330', '450', '450' ,'450', '460']}
-   
    type={showPassword ? "text" : "password"}   {...register("password")}  variant='flushed' 
-
-   
-    
-   
      />
-
-
    <InputRightElement width={['3rem', '8rem', '8rem' ,'8rem', '2.5rem']}>
    <Button
    h="1.75rem"
@@ -174,16 +163,10 @@ export default function Login() {
               direction={{ base: 'row'  }}
               align={'start'}
               justify={'space-between'}>
-                
-          
-
                 <Checkbox size='sm'   mr={-215} mt={1} border={1} defaultChecked textColor={'white'} > Lembrar de mim</Checkbox>
-
                 <Link color={'white'}  right={['-50px', '8rem', '8rem' ,'8rem', '10']} fontSize={14}
               >Esqueci a senha</Link> 
             </Stack>
-
-           
             <Button 
  top={10}
         bg="Primary.50" 
@@ -200,19 +183,12 @@ export default function Login() {
          LOGIN
         
         </Button>
-   
-        
-
           </Stack>
           <Text color='white' fontSize={['13','16','16','16','16']} ml={['100','130','175','170','170']} mt={59}>cadastre-se agora</Text>
           <Textline />
-          
           <Buttons/>
           </form> 
-          
-          
-          
-        </Stack>
+          </Stack>
         
       </Flex>
       
