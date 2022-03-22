@@ -48,13 +48,6 @@ interface IFormInputs {
 }
 
 
-const breakpoints = createBreakpoints({
-  sm: '320px',
-  md: '768px',
-  lg: '890px',
-  xl: '1100px',
-  '2xl': '1536px',
-})
 
 export default function Login() {
 
@@ -124,7 +117,8 @@ export default function Login() {
 
 <FormControl mb={2}>
    <FormLabel color='white'>Login </FormLabel>
-   <Input 
+   <Input border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
+          
     color='white' variant='flushed' 
     maxW={['330', '450', '450' ,'450', '460']}
     //largura começando de aparelhos menores para aparelhos maiores
@@ -146,7 +140,8 @@ export default function Login() {
    <FormLabel color='white' mb={2} >Senha</FormLabel>
 
    <InputGroup>
-   <Input color='white' 
+   <Input color='white' border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
+          
    maxW={['330', '450', '450' ,'400', '460']}
    
    type={showPassword ? "text" : "password"}   {...register("password")}  variant='flushed' 
