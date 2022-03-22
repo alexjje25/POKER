@@ -9,13 +9,16 @@ import {
     Stack,
     Button,
     useColorModeValue,
+    
   } from '@chakra-ui/react';
 
 
   export default function Buttons() {
     return (
 
-<Flex  mt={['1px',  '1px' , '1px', '-9px', '-1px' ]} ml={['50px',  '80px' , '100px', '124px', '120px' ]}>
+<Stack minH={'100vh'}  >
+      <Flex  flex={299}  >
+        <Stack spacing={1}  ml={'29%'} mt={10} direction={['column', 'row']} >
 <Button
 backgroundImage={
     'url(/email.svg)'
@@ -27,8 +30,8 @@ backgroundImage={
     
 
             p={6}
-            h={9}
-            mt={8}
+         
+         
             bg={useColorModeValue('#FFFFFF', 'gray.900')}
             color={'white'}
             rounded={'39'}
@@ -47,11 +50,11 @@ backgroundImage={
   w={10}
            p={6}
             h={9}
-            mt={8}
+        
             bg={useColorModeValue('#FFFFFF', 'gray.900')}
             color={'white'}
             rounded={'39'}
-            ml={1}
+            
             _hover={{
               transform: 'translateY(-2px)',
               boxShadow: 'lg',
@@ -65,10 +68,11 @@ backgroundImage={
   bgRepeat={'no-repeat'}
   bgSize={29.1}
   backgroundPosition={'center center'}
-  w={10}
-           p={6} 
-            h={9}
-            mt={8}
+  w={'10'}
+  
+          p={6} 
+            
+       
             
             bg={useColorModeValue('#FFFFFF', 'gray.900')}
             color={'white'}
@@ -90,7 +94,7 @@ backgroundImage={
   
            p={6}
             h={9}
-            mt={8}
+           
             ml={1}
             bg={useColorModeValue('#FFFFFF', 'gray.900')}
             color={'white'}
@@ -99,9 +103,10 @@ backgroundImage={
               transform: 'translateY(-2px)',
               boxShadow: 'lg',
             }}></Button>
-
+</Stack>
 </Flex>
 
+</Stack>
 
             );
         }

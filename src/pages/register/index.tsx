@@ -125,7 +125,7 @@ export default function Login() {
      <form onSubmit={handleSubmit(onSubmit)}>
      <FormControl mb={2}>
             <FormLabel color='white'>Name </FormLabel>
-            <Input 
+            <Input border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
              color='white' variant='flushed' 
 
              //largura começando de aparelhos menores para aparelhos maiores
@@ -147,7 +147,7 @@ export default function Login() {
 
      <FormControl mb={2}>
             <FormLabel color='white'>Login </FormLabel>
-            <Input 
+            <Input border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
              color='white' variant='flushed' 
 
              //largura começando de aparelhos menores para aparelhos maiores
@@ -168,7 +168,8 @@ export default function Login() {
 
    <FormLabel color='white' mb={2} >Senha</FormLabel>
    <InputGroup>
-   <Input color='white' 
+   <Input border='3px solid' borderLeft={0} borderRight={0} borderTop={0}
+   color='white' 
    w={['300px',  '409px' , '440px', '380px', '460px']}
    
    type={showPassword ? "text" : "password"}   {...register("password")}  variant='flushed' 

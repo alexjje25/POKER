@@ -16,7 +16,7 @@ import {
     return (
 
        <Flex 
-       mt={[-2.5, -2, -2, -2, -2]} ml={[-1, -5, -81 -0, -81]}>
+       mt={[-2.5, -2, -2, -2, 201]} ml={[-1, -5, -81 -0, -81]}>
          <Image
          alt={'reta Image'}
          objectFit={'cover'}
