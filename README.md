@@ -23,7 +23,7 @@
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/mzgcMfs/277338471-697338548057913-2877148351181589672-n.png" alt="277338471-697338548057913-2877148351181589672-n" border="0"></a>
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/rHQH2Bn/276294897-728087898570084-3919449186938832429-n.png" alt="276294897-728087898570084-3919449186938832429-n" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/3FnPdmS/277082648-419596513264925-7053175206355281884-n.png" alt="277082648-419596513264925-7053175206355281884-n" border="0"></a>
 </h2>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
